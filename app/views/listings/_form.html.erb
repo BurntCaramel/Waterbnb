@@ -32,8 +32,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :country_code %>
-    <%= f.text_field :country_code %>
+    <%= f.label :country_code_upper, 'Country' %>
+    <%= f.collection_select :country_code_upper, @countries, :alpha2, :name %>
   </div>
 
   <div class="field">
