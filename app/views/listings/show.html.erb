@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to 'Book now', new_booking_path(listing: @listing.id) %>
+
 <p>
   <strong>Hosted by:</strong>
   <%= @listing.host.email %>

@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+## Migrations
+
+- rails g scaffold Listing title:string host:references price:decim
+al long:decimal lat:decimal address city state country_code
+ max_guests:integer rooms:integer beds:integer shared:boole
+an min_nights:integer description:text
+
+- rails g scaffold Booking guest:references listing:r
+eferences check_in_at:date check_out_at:date guest_count:in
+teger stripe_charge_id:string special_requirement:text

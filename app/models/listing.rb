@@ -12,4 +12,8 @@ class Listing < ApplicationRecord
   def country_code_upper
     country_code.upcase
   end
+
+  def price_cents
+    (price * 100).to_i
+  end
 end
