@@ -1,43 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Host:</strong>
-  <%= @listing.host %>
+  <strong>Hosted by:</strong>
+  <%= @listing.host.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.full_address %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @listing.country.name %>
 </p>
 
 <p>
   <strong>Price:</strong>
   <%= @listing.price %>
-</p>
-
-<p>
-  <strong>Long:</strong>
-  <%= @listing.long %>
-</p>
-
-<p>
-  <strong>Lat:</strong>
-  <%= @listing.lat %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @listing.address %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @listing.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @listing.state %>
-</p>
-
-<p>
-  <strong>Country code:</strong>
-  <%= @listing.country_code %>
 </p>
 
 <p>
