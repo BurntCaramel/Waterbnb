@@ -8,15 +8,17 @@
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @listing.full_address %>
-</p>
-
-<p>
   <strong>Country:</strong>
   <%= @listing.country.emoji_flag %>
   <%= @listing.country.name %>
 </p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.full_address %>
+</p>
+
+<%= render 'map_embed', lat: @listing.lat, long: @listing.long %>
 
 <p>
   <strong>Price:</strong>
